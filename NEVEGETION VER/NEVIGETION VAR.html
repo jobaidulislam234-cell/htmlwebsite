@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Navigation Bar with Service Details</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', sans-serif; background: #f5f7fa; color: #111; }
+
+    .navbar {
+      background: linear-gradient(90deg, #0f172a, #1e293b);
+      color: #fff;
+      padding: 12px 24px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .nav-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand { font-weight: bold; font-size: 18px; letter-spacing: 0.5px; }
+
+    .menu {
+      list-style: none;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .menu > li { position: relative; }
+
+    .menu > li > a {
+      text-decoration: none;
+      color: #e0eaff;
+      padding: 10px 14px;
+      border-radius: 8px;
+      transition: background 0.3s, color 0.3s;
+      display: inline-block;
+    }
+
+    .menu > li > a:hover {
+      background: rgba(255,255,255,0.15);
+      color: #fff;
+    }
+
+    /* Dropdown styling */
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #fff;
+      color: #111;
+      min-width: 230px;
+      border-radius: 8px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+      list-style: none;
+      padding: 8px 0;
+      z-index: 10;
+    }
+
+    .dropdown li a {
+      display: block;
+      padding: 8px 14px;
+      color: #111;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    .dropdown li a:hover {
+      background: #f1f5f9;
+    }
+
+    .menu > li:hover > .dropdown {
+      display: block;
+    }
+
+    /* Contact dropdown icons */
+    .contact-item { display: flex; align-items: center; gap: 8px; }
+    .contact-icon { width: 20px; text-align: center; }
+
+    /* Service details styling */
+    .service-details {
+      max-width: 900px;
+      margin: 30px auto;
+      background: #fff;
+      padding: 24px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      display: none;
+    }
+
+    .service-details:target {
+      display: block;
+    }
+
+    .service-details h2 {
+      color: #1e293b;
+      margin-bottom: 10px;
+    }
+
+    .service-details p {
+      color: #334155;
+      line-height: 1.6;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Navigation bar -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <div class="brand"> MD JOBAIDUL ISLAM </div>
+      <ul class="menu">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT ME</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+
+        <!-- SERVICE dropdown -->
+        <li>
+          <a href="#">SERVICE ▾</a>
+          <ul class="dropdown">
+            <li><a href="#graphics">Graphics Design</a></li>
+            <li><a href="#software">Software Engineering</a></li>
+            <li><a href="#web">Web Developer</a></li>
+            <li><a href="#uiux">UI / UX Designer</a></li>
+            <li><a href="#gmail">Gmail Marketing</a></li>
+            <li><a href="#cpa">CPA Marketing</a></li>
+            <li><a href="#affiliate">Affiliate Marketing</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#testimonial">TESTIMONIAL</a></li>
+
+        <!-- CONTACT dropdown -->
+        <li>
+          <a href="#">CONTACT US ▾</a>
+          <ul class="dropdown">
+            <li><a class="contact-item" href="tel:+8801975042677">
+              <span class="contact-icon">📞</span> 01975042677</a></li>
+            <li><a class="contact-item" href="mailto:jobaidulislam@gmaile.com">
+              <span class="contact-icon">✉️</span> jobaidulislam@gmaile.com</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#blog">BLOG</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- SERVICE DETAILS -->
+  <section id="graphics" class="service-details">
+    <h2>Graphics Design</h2>
+    <p>আমরা পেশাদারভাবে লোগো ডিজাইন, ব্যানার, বিজনেস কার্ড, পোস্টার, এবং ব্র্যান্ড আইডেন্টিটি তৈরি করি।
+       প্রতিটি প্রজেক্টে সৃজনশীলতা এবং পেশাদার মান বজায় রাখা হয়।</p>
+  </section>
+
+  <section id="software" class="service-details">
+    <h2>Software Engineering</h2>
+    <p>আমরা বিভিন্ন ব্যবসা ও প্রতিষ্ঠানের জন্য কাস্টম সফটওয়্যার তৈরি করি।
+       এর মধ্যে রয়েছে একাউন্টিং সফটওয়্যার, ইনভেন্টরি ম্যানেজমেন্ট, ERP সলিউশন ইত্যাদি।</p>
+  </section>
+
+  <section id="web" class="service-details">
+    <h2>Web Developer</h2>
+    <p>Responsive ও modern ওয়েবসাইট ডেভেলপ করি যা সব মোবাইল ও ডেস্কটপে সুন্দরভাবে কাজ করে।
+       HTML, CSS, JavaScript, Python এবং অন্যান্য প্রযুক্তি ব্যবহার করা হয়।</p>
+  </section>
+
+  <section id="uiux" class="service-details">
+    <h2>UI / UX Designer</h2>
+    <p>ইউজার এক্সপেরিয়েন্স এবং ইউজার ইন্টারফেস ডিজাইন করে ওয়েব ও মোবাইল অ্যাপের লুক আরও আকর্ষণীয় করা হয়।
+       আমরা ব্যবহারকারীর দৃষ্টিভঙ্গি থেকে ডিজাইন করি।</p>
+  </section>
+
+  <section id="gmail" class="service-details">
+    <h2>Gmail Marketing</h2>
+    <p>ইমেইল মার্কেটিংয়ের মাধ্যমে আপনার ব্র্যান্ডের প্রচার বাড়াতে সহায়তা করি। টার্গেটেড কাস্টমারদের কাছে
+       পেশাদার মেইল ক্যাম্পেইন পাঠানো হয়।</p>
+  </section>
+
+  <section id="cpa" class="service-details">
+    <h2>CPA Marketing</h2>
+    <p>আমরা CPA ক্যাম্পেইন পরিচালনা করে আপনার অনলাইন আয়ের পরিমাণ বাড়াতে সাহায্য করি।
+       অভিজ্ঞ মার্কেটার টিমের মাধ্যমে রেজাল্ট নিশ্চিত করা হয়।</p>
+  </section>
+
+  <section id="affiliate" class="service-details">
+    <h2>Affiliate Marketing</h2>
+    <p>Affiliate Marketing এর মাধ্যমে আপনার প্রোডাক্ট বা সার্ভিস বিক্রি বাড়ানোর কৌশল তৈরি করি।
+       বিভিন্ন প্ল্যাটফর্মে প্রচারণা চালানো হয়।</p>
+  </section>
+
+</body>
+</html>
