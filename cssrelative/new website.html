@@ -1,0 +1,908 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8" />
+  <img src="" alt=" 👇
+
+আমি নিজ উদ্যোগে এই ওয়েবসাইটটি তৈরি করেছি শেখার উদ্দেশ্যে। এটি একটি ব্যবসা প্রতিষ্ঠানের জন্য তৈরি করা হয়েছে, তবে ব্যবসাটি আমার নয়। ওয়েব ডিজাইন ও ডেভেলপমেন্ট শেখার অংশ হিসেবে আমি সম্পূর্ণ ওয়েবসাইটটি নিজ হাতে তৈরি করেছি। 💻✨
+" width="1800" height="2000">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Business Store — চেয়ার, বই, টেবিল ও হাউসহোল্ড সামগ্রী</title>
+  <style>
+    :root{
+      --bg: linear-gradient(135deg,#c3ecff 0%,#fef8e7 100%);
+      --card-bg: #fff;
+      --accent-1: #ff7b54;
+      --accent-2: #6bcdfd;
+      --accent-3: #ffd36b;
+      --text: #1d1d1f;
+      --muted: #555;
+      --shadow: 0 8px 20px rgba(0,0,0,0.1);
+      --radius: 14px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: 'Poppins', sans-serif;
+      color:var(--text); background:var(--bg); padding:24px;
+    }
+    .container{max-width:1200px;margin:0 auto}
+    header{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:60px;height:60px;border-radius:14px;background:linear-gradient(135deg,var(--accent-1),var(--accent-2));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:22px;box-shadow:var(--shadow)}
+    nav a{margin-left:16px;text-decoration:none;font-weight:600;color:var(--text);}
+    nav a:hover{text-decoration:underline;}
+
+    .hero{background:linear-gradient(120deg,rgba(255,255,255,0.85),rgba(255,255,255,0.7));border-radius:18px;box-shadow:var(--shadow);padding:24px;display:flex;flex-wrap:wrap;align-items:center;gap:20px}
+    .hero .text{flex:1;min-width:250px}
+    .hero h2{font-size:28px;margin:0 0 10px 0;color:#222}
+    .hero p{color:var(--muted);font-size:15px;margin-bottom:14px}
+    .hero img{width:280px;border-radius:12px;box-shadow:var(--shadow)}
+
+    .controls{display:flex;flex-wrap:wrap;gap:10px}
+    .controls input,.controls select{padding:10px 14px;border-radius:10px;border:1px solid #ddd;min-width:200px}
+    .controls button{padding:10px 18px;border:none;border-radius:10px;background:var(--accent-2);color:#fff;font-weight:600;cursor:pointer}
+
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:22px;margin-top:24px}
+    .card{background:var(--card-bg);padding:14px;border-radius:14px;box-shadow:var(--shadow);text-align:center;transition:transform 0.3s ease}
+    .card:hover{transform:translateY(-6px)}
+    .card img{width:100%;height:180px;object-fit:cover;border-radius:12px}
+    .card h3{margin:12px 0 6px 0}
+    .muted{color:var(--muted);font-size:14px}
+    .price{color:var(--accent-1);font-weight:800;font-size:18px;margin-top:8px}
+
+    footer{margin-top:40px;padding:16px;background:rgba(255,255,255,0.6);border-radius:12px;display:flex;justify-content:space-between;flex-wrap:wrap;color:var(--muted);font-size:14px;text-align:center}
+
+    @media(max-width:600px){.hero{flex-direction:column;text-align:center}.hero img{width:90%}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">B</div>
+        <h1>Business Store</h1>
+      </div>
+      <nav>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="text">
+        <h1>  📍Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh
+              <br>  📞01975042677  
+               <br> 📧jobaidulislam234@gmail.com</h1>
+        <h2>Explore Our International Collection</h2>
+        <p>
+
+🏪 স্বপ্নের সব কিছু এক ঠিকানায়!Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        📞01975042677 🌟
+
+আপনার প্রয়োজনের সবকিছু এখন এক জায়গায় —
+🪑 ফার্নিচার থেকে 🛏️ বেড,
+💻 ল্যাপটপ থেকে 📺 টিভি,
+🚪 দরজা-জানালা থেকে 🍽️ চামচ-গ্লাস,
+🍚 রাইস কুকার থেকে 🌬️ BRB সিলিং ফ্যান —
+সবই পাবেন আমাদের স্টোরে একসাথে!
+
+✨ মান, ডিজাইন ও দামে আমরা অনন্য!
+💥 ঘর সাজাতে বা নতুন কিছু কিনতে — আমাদের স্টোরই আপনার সঠিক পছন্দ!
+
+📍 আসুন আজই — দেখুন, পছন্দ করুন, নিয়ে যান!
+🛒 সবকিছু এক ছাদের নিচে — আপনার বিশ্বাস, আমাদের প্রতিশ্রুতি!
+
+</p>
+        <div class="controls">
+          <input type="text" id="search" placeholder="Search product..." />
+          <select id="category">
+            <option value="all">All Categories</option>
+            <option value="chair">Chair</option>
+            <option value="book">Polytechnic Book</option>
+            <option value="table">Table</option>
+            <option value="home">Home Item</option>
+          </select>
+          <button onclick="resetFilters()">Reset</button>
+        </div>
+      </div>
+      <img src="jobaidul.jpg" alt="Business showcase" />
+    </section>
+
+    <main id="products" class="grid">
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="Office Chair.jpg" alt="Office Chair" />
+        <h3>Office Chair</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">৳3,500</div>
+        <div class="price">WARRANTY 3 YEAR </div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5>
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="sopa.jpg" alt="Office Chair" />
+        <h3>Sofa Set</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">30,300</div>
+        <div class="price">WARRANTY 3 YEAR </div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5>
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="chamoj.jpg" alt="Office Chair" />
+        <h3>Dessert Fork</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳500</div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5>
+          
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="raic.jpg" alt="Office Chair" />
+        <h3>Rice Cooker</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+         <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳1,800</div>
+        <div class="price">WARRANTY 3 YEAR </div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5>
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="gesh.jpg" alt="Office Chair" />
+        <h3>Gase Stove</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳2,000</div>
+        <div class="price">WARRANTY 2 YEAR </div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5>
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="peshar.jpg" alt="Office Chair" />
+        <h3>Pressure Cooker</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+         <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳1,500</div>
+        <div class="price">WARRANTY 6 MONTH </div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5>
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="refrija.jpg" alt="Office Chair" />
+        <h3>Refrigerators</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳50,0000</div>
+        <div class="price">WARRANTY 2 YEAR </div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5>
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="motor.jpg" alt="Office Chair" />
+
+        <h3>Motor</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳7,500</div>
+        <div class="price">WARRANTY 01 YEAR </div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5>
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="jog.jpg" alt="Office Chair" />
+        <h3>Water Jug</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳700</div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5>
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="mog.jpg" alt="Office Chair" />
+        <h3>Red and Golden Color Metal Body with Plastic Stone Design 6 Cup 1 Jug 1 Plate Surai Set</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+         <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳3,500</div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5>
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="ful.jpg" alt="Office Chair" />
+        <h3>Ceramic Made Cream Color Flower Vases</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳500</div>
+         <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5>
+
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="38.jpg" alt="Office Chair" />
+        <h3>side-table</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳3,500</div>
+         <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5>
+
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="Office Chair.jpg" alt="Office Chair" />
+        <h3>Office Chair</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳3,500</div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5>
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="5.jpg" alt="Office Chair" />
+        <h3>conference-table</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳10,500</div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5>
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="7_.jpg" alt="Office Chair" />
+        <h3>EACH Foldable Wooden Laptop Table For Bed, Study Table With Drawer, Tablet/Mobile Holder For Kids & Adults (Wood, 39.4 Cm, 59.7 Cm)</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳7,500</div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5>
+
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="BRB LOVELY.jpg" alt="Office Chair" />
+        <h3>BRB LOVELY CEILING FAN</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳3,800.00 BDT*</div>
+        <div class="price">WARRANTY 1 YEAR </div>
+         <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5>
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="1.jpg" alt="Office Chair" />
+        <h3>Sofa Chair</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳4,500</div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5>
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="2.jpg" alt="Office Chair" />
+        <h3>Dining Table</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳107,267.oo BD</div>
+        <div class="price">WARRANTY 1 YEAR </div>
+         <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5>
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="3.jpg" alt="Office Chair" />
+        <h3>dining-chair</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳7,514.oo</div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5>
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="4.jpg" alt="Office Chair" />
+        <h3>DINING SET</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+  
+        <div class="price">৳ 81,089.00</div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5>
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="HCD-6832-400x450.jpg" alt="Office Chair" />
+        <h3>CHEST OF DRAWER (HCD 6832)</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳ 38,152.00</div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5>
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="WEB-HTR-0355.jpg" alt="Office Chair" />
+        <h3>READING TABLE (HTR 0355)</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳ 11,062.00</div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5>
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="MEB-6176-A-min-3-400x450.jpg" alt="Office Chair" />
+        <h3>SOFA SET</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳10,094.00</div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5>
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="FTM-0594-400x450.jpg" alt="Office Chair" />
+        <h3>EXECUTIVE TABLE </h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳11,599.00</div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5>
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="HCD-6832-400x450.jpg" alt="Office Chair" />
+        <h3>OVEN STAND (HOS 6706)</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳ 19,447.00</div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5>
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="home-page-craft.jpg" alt="Office Chair" />
+        <h3>craft-and-decor</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+         <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳3,500</div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5> 
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="cover.jpg" alt="Office Chair" />
+        <h3>Curtain</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳2,500</div>
+         <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5> 
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="cover-bed-sheet.jpg" alt="Office Chair" />
+        <h3>Bed Sheet</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳3,000</div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5> 
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="dsc01042.jpg" alt="Office Chair" />
+        <h3>Bambo Lamp Shade-Spark</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳800</div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5> 
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="700-x-936-5 (1).jpg" alt="Office Chair" />
+        <h3>Home Decor</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳4,450</div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5> 
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="dsc01031.jpg" alt="Office Chair" />
+        <h3>Bambo Lamp Shade-Tower</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+         <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳3,500</div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5> 
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="111.jpg" alt="Office Chair" />
+        <h3>Cushion</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳625</div>
+         <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5> 
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="811.jpg" alt="Office Chair" />
+        <h3>bamboo-tissue-box---mellow</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳600</div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5> 
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="4.jpg" alt="Office Chair" />
+        <h3>Bamboo Basket</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳3,500</div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5> 
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="5.jpg" alt="Office Chair" />
+        <h3>regal-bed-sheet--spring-bloom</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳20,000</div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5> 
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="9.jpg" alt="Office Chair" />
+        <h3>regal-bed-sheet--royal-tapestry--crystal-teal</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳20,900</div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5> 
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="3367.jpg" alt="Office Chair" />
+        <h3>regal-bed-sheet-spring-bloom-blue-ntkap</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳30,900</div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5> 
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="am.jpg" alt="Office Chair" />
+        <h3>regal-bed-sheet-rose-reverie--purple</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳18,900</div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5> 
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="b.jpg" alt="Office Chair" />
+        <h3>Regal Bed Sheet Rose Reverie-315 (Peach)</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳17s,900</div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5> 
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src=" C.jpg" alt="Office Chair" />
+        <h3>Bed Sheet (Purple Sparkle)</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳17,900</div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5> 
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="d.jpg" alt="Office Chair" />
+        <h3>Executive Revolving Chair</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳12,900</div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5> 
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="visitor-chair-black-color-pu-leather-230x230.webp" alt="Office Chair" />
+        <h3>Visitor Chair</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳ 9,500.00</div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5> 
+        
+      </div>
+
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="dd.jpg" alt="Office Chair" />
+        <h3>Office Chair</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳ 11,000.00</div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5> 
+        
+    
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="ee.jpg" alt="Office Chair" />
+        <h3>Ergonomic Chair</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳ 15,000.00</div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5> 
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="Ergonomic-office-chair-3-230x230.webp" alt="Office Chair" />
+        <h3>Ergonomic Chair</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳ 13,500.00</div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5> 
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="gg.jpg" alt="Office Chair" />
+        <h3>Executive Revolving Chair</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳ 25,000.00</div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5📞>01975042677</h5> 
+        
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="360_F_53685741_ouWoGf8qqzeH6oeW2dgPqsNmr5Z3TSL7 (1).jpg" alt="Office Chair" />
+        <h3>Water Glass</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳500</div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5> 
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="h.jpg" alt="Office Chair" />
+        <h3>Clear Glass</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+         <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳680</div>
+         <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5> 
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="s.jpg" alt="Office Chair" />
+        <h3>Refrigerators</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳30,000</div>
+        <div class="price">WARRANTY 1 YEAR </div>
+         <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5> 
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="860X740-02 (1).jpg" alt="Office Chair" />
+        <h3>Refrigerators</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳40,792.00 BDT*
+</div>
+        <div class="price">WARRANTY 1 YEAR </div>
+         <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5> 
+        
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="images.jpg" alt="Office Chair" />
+        <h3>Refrigerators</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳30,990</div>
+        <div class="price">WARRANTY 1 YEAR </div>
+         <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5>
+        
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="MRNF197XLB-Open-Front-Filled.jpeg" alt="Office Chair" />
+        <h3>Refrigerators</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳90,000</div>
+        <div class="price">WARRANTY 1.5 YEAR </div>
+         <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞📞01975042677</h5>
+        
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="images (1).jpg" alt="Office Chair" />
+        <h3>Refrigerators</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳190k</div>
+        <div class="price">WARRANTY 1.5 YEAR </div>
+         <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5>
+        
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="download.jpg" alt="Office Chair" />
+        <h3> VISION Rice Cooker 1.8 L REL-40-06 SS Red (Double Pot)</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳2,541</div>
+        <div class="price">WARRANTY 1 YEAR </div>
+         <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5>
+        
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="369691197_811710707410919_6621430851638212291_n_73c3e3bc-336e-4ee9-a9f1-51fdb0debc8a.webp" alt="Office Chair" />
+        <h3>Prestiege 1.8 LTR 700-WATT Double Pot Electric Rice Cooker UT-P1784
+</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳2,690</div>
+        <div class="price">WARRANTY 1 YEAR </div>
+         <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5>
+        
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="1b896c18-68eb-4568-b413-e8698de8fe2c.jpg" alt="Office Chair" />
+        <h3>528 Results: New & Used in Monitors in Victoria
+            ram:128,rom:512 ,display:32" 
+        </h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳18,690</div>
+        <div class="price">WARRANTY 1 YEAR </div>
+         <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5>
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="121.jpg" alt="Office Chair" />
+        <h3>Ezviz HP4 Wire-Free Peephole Smart Video Doorbell #CS-HP4
+Product Id: 127.07.987.478
+ Quick Overview
+Type - Smart Video Doorbell
+Storage - 512GB
+Connectivity Mode - Wi-Fi
+Color - Black </h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">Tk 13,560</div>
+        <div class="price">WARRANTY 1 YEAR </div>
+         <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5>
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="download (1).jpg" alt="Office Chair" />
+        <h3>Ultra Door Onino flower 7'*2.5' L-TB</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳7,500</div>
+         <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5>
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="93303.jpg.png" alt="Office Chair" />
+        <h3>Cosmic Door Bronze</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳12,780.00</div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5>
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="Right_Side_06sc-0x.jpg.png" alt="Office Chair" />
+        <h3>popular door gorgeous</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳3,735.00</div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5>
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="taigon-LH-original.jpg.png" alt="Office Chair" />
+        <h3>Komando Door Trigon
+            Door Size:
+81"x32"-4"'
+7'x3'
+7'x3.5'
+        </h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳11,070.00
+৳12,300.00
+You save:
+৳1,230.00</div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5>
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="RFL_-944888_lhtk-i0.jpg" alt="Office Chair" />
+        <h3>Popular Acacia 7x2.5 |
+            Door Size:
+81"x32"-4"'
+Door Lock System:
+Tower Bolt
+Door Opening System:
+Right Side
+Left Side
+        </h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳3,735.00</div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5>
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="980321.jpg.png" alt="Office Chair" />
+        <h3>Crown door Black Gorgeous 7x2.5 L-HB
+            Size: 7 feet X 2.5 feet 
+        </h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳3,780.00</div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5>
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="0135197_mah-pu-l-solid-shutter-pss-01-39-x-82-by-rpl-distribution.jpeg.png" alt="Office Chair" />
+        <h3>Mah PU L Solid Shutter PSS-01 39" x 82" By RPL Distribution</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳14,950.00</div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5>
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="88460.jpg.png" alt="Office Chair" />
+        <h3>Solid Door Minus 7'X2.5' R-TB</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳5,760.00</div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5>
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="980417.jpg (1).png" alt="Office Chair" />
+        <h3>Eco Door Supernova 6.5x2.5 R-HB</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳3,060.00</div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5>
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="0693212_super-spectra-7x25-l-hb.jpeg.png" alt="Office Chair" />
+        <h3>Super Spectra 7'x2.5' R-HB.​</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳9,900.00</div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5>
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="869521.jpg.png" alt="Office Chair" />
+        <h3>Special Cat Door Coffee 27x30</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳1,900.00</div>
+         <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5>
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="869522.jpg.png" alt="Office Chair" />
+        <h3>Special Cat Door Coffee 24x30,Special Cat Door Coffee 24x30
+Size:24x30</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳3,500</div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5>
+        
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="images (2).jpg" alt="Office Chair" />
+        <h3>storiea</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+         <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳1,000</div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5>
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="download (2).jpg" alt="Office Chair" />
+        <h3> gas cylinder</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳1,800</div>
+         <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5>
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="tdh-357.jpg" alt="Office Chair" />
+        <h3>Dining Set</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳9,500</div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5>
+      </div>
+      <div class="card" data-category="chair" data-title="অফিস চেয়ার">
+        <img src="747363-1.jpeg" alt="Office Chair" />
+        <h3>regular tulip chire -301-oreng</h3>
+        <div class="muted">Comfortable ergonomic design</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳2,000</div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5>
+      </div>
+      <div class="card" data-category="chair" data-title="ডাইনিং চেয়ার">
+        <img src="746293-1 (1).jpeg" alt="Dining Chair" />
+        <h3>regular tulip chire -301-blue</h3>
+        <div class="muted">Elegant wooden finish</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳2,000</div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5>
+      </div>
+      <div class="card" data-category="book" data-title="পলিটেকনিক বই">
+        <img src="sdc-3118view-01.jpg" alt="Polytechnic Book" />
+        <h3>Sofa</h3>
+        <div class="muted">Latest syllabus 2025 edition</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳10k</div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5>
+      </div>
+      <div class="card" data-category="table" data-title="অফিস টেবিল">
+        <img src="dsc00740.jpg" alt="Office Table" />
+        <h3>laptop Table</h3>
+        <div class="muted">Compact with drawers</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳5,300</div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5>
+      </div>
+      <div class="card" data-category="home" data-title="কার্টেন">
+        <img src="dsc01042 (1).jpg" alt="Curtain" />
+        <h3>bombo lamp shade-spark</h3>
+        <div class="muted">Lightproof & washable</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳1,200</div>
+        <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5>
+        
+      </div>
+      <div class="card" data-category="home" data-title="বেডশীট">
+        <img src="frc-301-b-group.jpg" alt="Bedsheet" />
+        <h3>book shelf</h3>
+        <div class="muted">Soft cotton texture</div>
+        <div class="price">SPECIAL PRICE</div>
+        <div class="price">৳1,800</div>
+         <h4>Address:Three Bhai Furniture, 2nd Floor, Bashundhara,Dhaka,Bangladesh</h4>
+        <h5>📞01975042677</h5>
+      </div>
+    </main>
+
+    <footer id="contact">
+      <div>📞 01975042677 | ✉️ jobaidulislam234@gmail.com</div>
+      <div>🌍 Worldwide Delivery Available | © 2025 Business Store</div>
+    </footer>
+  </div>
+
+  <script>
+    const searchEl=document.getElementById('search');
+    const catEl=document.getElementById('category');
+    const grid=document.querySelectorAll('.card');
+
+    function filterProducts(){
+      const q=searchEl.value.toLowerCase();
+      const c=catEl.value;
+      grid.forEach(card=>{
+        const matchTitle=card.dataset.title.toLowerCase().includes(q);
+        const matchCat=c==='all'||card.dataset.category===c;
+        card.style.display=(matchTitle&&matchCat)?'':'none';
+      });
+    }
+
+    searchEl.addEventListener('input',filterProducts);
+    catEl.addEventListener('change',filterProducts);
+    function resetFilters(){searchEl.value='';catEl.value='all';filterProducts();}
+  </script>
+</body>
+</html>
